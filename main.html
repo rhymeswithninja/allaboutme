@@ -1,22 +1,147 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <title>rhymeswithninja: all about me</title>
-    </head>
-    <body>
-      
-      <h1> Hi, my name is Chinjaa and it rhymes with ninja </h1>
-      <p>This is a basic HTML websiste I've built to practice my skills. 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Me</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="script.js"></script></head>
+<body>
 
-      <h3> Fun facts about me: </h3>
-      <ul> 
-        <li>I am Hmong-American. </li>
-        <li>I am the youngest of seven children.</li> 
-        <li>I have a 1 year old puppy named Koda. He's a Shiba Inu and he looks just like a little fox. </li>
+    <!-- Task 1: Name at the top-left -->
+    <header id="home">
+      <h1 class="name">Chinjaa</h1>
+    </header>
+
+    <!-- Task 2: Navigation bar with hover effects -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
         </ul>
-        
-        <p>Connect with me on 
-  <a href="https://www.linkedin.com/in/chinjaa-xiong-0b1451101/">LinkedIn</a> <img src="https://banner2.cleanpng.com/20180529/str/avpsm7w6e.webp" alt="LinkedIn" width="20" height="20">.
-          
-    </body>
-  </html>
+    </nav>
+
+    <!-- Task 3: All About Me Section -->
+    <section id="about">
+      <img src="https://cdn-icons-png.flaticon.com/256/2171/2171977.png" alt="Profile Picture" class="profile-img">
+        <h2>Hi, I'm Chinjaa! 👋</h2>
+        <p>My name rhymes with ninja and I'm currently a student enrolled in a Full Stack Development Boot Camp. 
+          <br>I love learning new things, creating cool projects, and working on puzzles. 
+          <br>One fun fact about me: I have a 1 year old puppy named Koda. He's a Shiba Inu and looks just like a little fox.
+    </section>
+
+    <!-- Task 4: Skills section with icons -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/256/136/136528.png"/>
+            <h4>HTML</h4>
+            <p>Less than 1 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/256/136/136530.png"/>
+            <h4>JavaScript</h4>
+            <p>2 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/256/136/136529.png"/>
+            <h4>Adobe Photoshop</h4>
+            <p>2 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/256/136/136527.png"/>
+            <h4>CSS</h4>
+            <p>2 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/256/136/136543.png"/>
+            <h4>PowerPoint</h4>
+            <p>2 years experience</p>
+        </div>
+    </section>
+
+    <!-- Task 5: Projects Section -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Optimizing Internal Knowledge Sharing</h3>
+            <ul>
+              <li>Develop a centralized knowledge base to improve cross-team collaboration.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Enhancing Employee Learning with Workday LMS</h3>
+            <ul>
+              <li>Streamline training and onboarding processes using Workday Learning.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Revamping the Annual Compliance Training Experience</h3>
+            <ul>
+              <li>Increase completion rates and engagement for mandatory compliance training.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Chinjaa consistently delivers high-quality work and pays close attention to the smallest details. Her ability to stay organized and meet deadlines is impressive, and she always finds ways to improve processes.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Chinjaa is always supportive, collaborative, and ready to help. Her positive energy and problem-solving skills make her a joy to work with.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Chinjaa consistently delivers high-quality work, stays organized, and ensures every detail is covered. She’s a true asset to any team.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+            </a>
+    </div>
+
+    <div class="popup flex_center" id="popup">
+      <img src="https://cdn-icons-png.flaticon.com/256/190/190411.png" alt="Checkmark"/>
+      <h3>Thank you for submitting a recommendation!</h3>
+      <button onclick="showPopup(true)">Ok</button>
+    </div>
+  </body>
+</html>

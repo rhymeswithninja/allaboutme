@@ -1,0 +1,227 @@
+/* Reset Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Task 1: Styled Name on Top-Left */
+.name {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4A90E2;
+}
+
+/* Task 2: Navigation Bar */
+nav {
+  background: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+  color: #FFD700;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Task 3: About Me Section */
+#about {
+  text-align: center;
+  padding: 50px;
+  background: #f4f4f4;
+}
+
+.profile-img {
+  width: 150px;
+}
+
+/* Task 4: Skills Section */
+#skills {
+  text-align: center;
+  padding: 30px;
+  background: #e3e3e3;
+}
+
+.skill {
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.skill img {
+  height: 50px;
+  align-items: center;
+}
+
+/* Task 5: Projects Section */
+#projects {
+  padding: 40px;
+  text-align: center;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  margin: 10px auto;
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+  /* Recommendations */
+  
+  .all_recommendations {
+    display: flex;
+    align-items: center;
+    margin-left: 1in;
+    flex-direction: row;
+    flex-flow: wrap;
+    padding: 20px;
+  }
+  
+  .recommendation {
+    font-style: italic;
+    text-align: left;
+    width: 21.875rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+    border:1px solid gray;
+    font-size: 18px;
+    min-height:150px
+  }
+  
+  .recommendation span {
+    color: #7600bc;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Scroll to Top Button */
+  
+  .iconbutton{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #7600bc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  
+  /* Form Pop-up */
+  
+  .popup {
+    width:400px;
+    background-color: #e8bcf0;
+    border-radius: 3mm;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: fixed;
+    /* padding: 30px; */
+    visibility: hidden;
+  }
+  
+  .popup img {
+    padding-top: 20px;
+  }
+  
+  .popup button {
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    margin-left: 25%;
+  }
+  
+  .popup button:hover {
+    background-color: #fff;
+    border: 2px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 25%;
+  }
+  
+  /* Recommendation Form */
+  
+  input, textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    margin: 10px;  
+    width:100%;
+  }
+  
+  fieldset {
+    display: flexbox;
+    align-content: center;
+    justify-content: center;  
+    padding: 25px; 
+    margin-left: 50px; 
+    margin-right: 50px;   
+    border: thin solid white;
+    width: 50%;
+  }
+  
+  /* Buttons */
+  
+  button {
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: #7600bc;
+    border: 1px solid #7600bc;
+    color: #fff;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+  }
